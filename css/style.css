@@ -1,0 +1,49 @@
+ul {
+    list-style-type: none;
+    background: green;
+    padding-left: 0px;
+}
+
+li {
+   display: inline-block;
+   color: blue;
+   background: yellow;
+   border-radius: 5px;
+   margin-left: 10px;
+   
+}
+
+li:first-child {
+    margin-left: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section.feature-box {
+    display: flex;
+    width: 100%;
+}
+
+.feature-box div {
+    margin: 1px; /*every web developer will have to learn
+    DRY, Don't repeat yourself*/
+}
+
+section.feature-box.sales div/*use dot to express space in class tag*/{
+    background: red;
+}
+
+section.feature-box.closeouts div {
+    background: pink;
+
+}
+/*use "," to apply on more than one selector,
+space is apply the selector that under the previous one
+example: section div, means the div under the section tag
+and "a" means section div, and a tag, no matter where is the tag a*/
+/*in css, we can use "class to target stuff, we can also
+use "id" to target stuff. they are two different ways, class=. id=# 
+id can be used only once per web, if apply two ids, Chrome can solve the issue,
+but we don't know other web browser*/
